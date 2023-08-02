@@ -12,9 +12,6 @@ async function read() {
 function write(data) {
   return fs.writeFile(contactsPath, JSON.stringify(data));
 }
-// fs.readFile('contacts.json')
-//   .then(data => console.log(data.toString()))
-//   .catch(err => console.log(err.message));
 
 async function listContacts() {
   const contacts = await read();
